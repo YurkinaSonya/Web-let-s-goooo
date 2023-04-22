@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>кластер</title>
+        <link rel="stylesheet" href="styles\style3.css">
+    </head>
+    
+    <body>
+        <p>><a href = base.html>вернуться на базу</a></p>
+        <div class="back" id = "back"></div>
+        <div class = "blockTakeValues">
+            <label>Количество кластеров</label><input type="number" id="numOfC" min="1" max="5">
+            <label>Количество случайных точек</label><input type="number" id="numOfP" min="1" max="5000">
+            <!--
+            <label><span class = "num">1</span>Количество кластеров<span id = "slide"></span><span class = "num" id = "num"></span></label>
+            <input type = "range" name = "n" id = "rangeN" value = "3" min = "0" max = "0" oninput = "range_disp.value = rangeN.value"/>
+            <label><span class = "num">1</span>Количество случайных точек<span class = "num">5000</span></label>
+            <input type = "range" name = "rndm" id = "rangeRndm" value = "3" min = "1" max = "5000" oninput = "range_disp.value = rangeN.value"/>
+            -->
+        </div>
+        <div>
+            <button onclick = "clickClearMtrx()">Очистить поле</button><button onclick = "clstr()">Кластеризовать</button><button onclick = "clstrH()">Кластеризовать Ие</button><button onclick = "rndm()">Расставить рандомных точек</button>
+        </div>
+        <p> Данная точка относится к кластеру: <span id="demo"></span></p>
+        <div id = "colorForPoint" class="clr"></div>
+        <script src = scripts\clstr.js></script>
+    </body>
+</html>

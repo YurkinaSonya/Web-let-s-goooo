@@ -1,0 +1,68 @@
+:root {
+    --size : 100;
+    --defWidthOfSquare : 7px;
+    --widthOfSlider : 700px;
+}
+
+a {
+    color: #ffffff;
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+label {
+    color: rgb(255, 255, 255);
+}
+
+.back {
+    background-color:rgb(8, 9, 31);
+    width: calc(var(--size)*var(--defWidthOfSquare));
+    height: calc(var(--size)*var(--defWidthOfSquare));
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+    grid-template-rows: repeat(var(--size), 1fr);
+    border: dashed rgb(18, 40, 49);
+}
+
+.clr {
+    width: 80px;
+    height: 30px;
+    border: solid black;
+    background-color: black;
+}
+
+.dot {
+    height: var(--defWidthOfSquare);
+    width: var(--defWidthOfSquare);
+    background-color: rgb(8, 9, 31);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+body {
+    background-color: rgb(8, 9, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blockTakeValues { 
+    width: var(--widthOfSlider);
+    background: rgb(20, 22, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="range"] {
+    width:var(--widthOfSlider);
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+}

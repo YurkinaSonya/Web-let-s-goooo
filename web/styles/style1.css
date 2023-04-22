@@ -1,0 +1,72 @@
+:root{
+    --n : 5;
+    --maxValue : 51;
+    --defWidthOfImage : 16px;
+    --defWidthOfSquare : 16px;
+    --widthOfSlider : 400px;
+    ---heightOfWindow : 1px;
+}
+body {
+    background-color : rgb(255, 226, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    color: #000000;
+}
+
+p {
+    color: blueviolet;
+    font-size: 80%;
+}
+
+.btns {
+    border: dashed rgb(180, 45, 45);;
+    position : absolute;
+    left : 1500px;
+    top : 200px;
+    width: 100px;
+}
+
+.blockForMatrix { 
+    /*width: calc(var(--heightOfWindow) * 0.5);
+    height: calc(var(--heightOfWindow) * 0.5);*/
+    width: calc(var(--defWidthOfSquare) * var(--maxValue));
+    height: calc(var(--defWidthOfSquare) * var(--maxValue));
+}
+.baseBlock {
+    width: 100%;
+}
+.blockTakeValues { 
+    width: var(--widthOfSlider);
+    background: #ffe9e9;
+}
+.inputBox {
+    width: calc(var(--defWidthOfSquare) * 10);
+    height: calc(var(--defWidthOfSquare) * 10);
+    margin: 0;
+}
+label {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(180, 45, 45);
+}
+
+input [type = "checkbox"] {
+    margin: 0.4rem;
+}
+
+input[type="range"] {
+    width:var(--widthOfSlider);
+}
+img {
+    height: calc(calc(var(--defWidthOfSquare) * var(--maxValue)) / var(--n));
+    /*margin : 0px 0px 0px 0px;*/
+    float: left;
+}
+.num{
+    font-size: 120%;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles\style1.css">
+        <title>лабиринт</title>
+    </head>
+    
+    <body>
+        <p>><a href = base.html>вернуться на базу</a></p>
+        <div class = "blockTakeValues">
+            <label><span class = "num">5</span>Выберите размер лабиринта<span class = "num">51</span></label>
+            <input type = "range" name = "n" id = "rangeN" value = "5" min = "5" max = "51" step="2" oninput = "range_disp.value = rangeN.value"/>
+        </div>
+        <div class = "blockForMatrix" id = "labirintSquare"></div>
+        <div class="buttons">
+            <button onclick = "setTypeOfEnter('0')">Установить стены</button>
+            <button onclick = "setTypeOfEnter('1')">Установить начальную точку</button><button onclick = "setTypeOfEnter('2')">Установить конечную точку</button>
+            <button onclick = "clickFindWay ()">Найти путь по лабиринту</button><button onclick = "clickClearWay()">Очистить путь</button><button onclick = "clickClearMtrx()">Очистить поле</button>
+            <button onclick = "generateNewLabirint()">Сгенерировать лабиринт</button>
+        </div>
+        <div class="btns">
+            <label class="newL">Анимация</label><input type="checkbox" id = "anim" checked>
+        </div>
+        <p>Value: <span id="demo"></span></p>
+        <script src = scripts\vle.js></script>
+    </body>
+</html>

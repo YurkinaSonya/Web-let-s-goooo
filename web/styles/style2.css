@@ -1,0 +1,54 @@
+:root{
+    --size : 5;
+    --defWidthOfSquare : 100px;
+}
+
+a {
+    color: #ffffff;
+}
+
+p {
+    color: blueviolet;
+}
+
+body {
+    background-color: rgb(39, 17, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleDiv {
+    width: 500px;
+    height: 80px;
+    margin-bottom: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(65, 8, 47);
+    display: flex;
+
+}
+.btn {
+    background-color: aquamarine;
+    color: blue;
+    padding: 0 1em;
+    height: 60px;
+    font-size: 20px;
+}
+
+.divForPainting {
+    background-color: rgb(65, 8, 47);
+    width: calc(var(--size)*var(--defWidthOfSquare));
+    height: calc(var(--size)*var(--defWidthOfSquare));
+    display: grid;
+    grid-template-columns: repeat(var(--size), 1fr);
+    grid-template-rows: repeat(var(--size), 1fr);
+    gap: 3px;
+    padding: 3px;
+}
+
+.pixel {
+    background-color: white;
+    /*border-radius: 1px;*/
+}

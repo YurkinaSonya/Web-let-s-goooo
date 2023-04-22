@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>кластер</title>
+        <link rel="stylesheet" href="styles\style6.css">
+    </head>
+    
+    <body>
+        <p>><a href = base.html>вернуться на базу</a></p>
+        <canvas id = "plt" class="plt" width = 700px height = 700px></canvas>
+        <div class="btns">
+            <label class="newL">K - means</label>
+            <div>
+            <label class="newL">Цвет</label><input type="checkbox" id = "KColor" checked>
+            </div>
+            <div>
+            <label class="newL">Линии</label><input type="checkbox" id = "KLines" checked>
+            </div>
+            <label class="newL">|||||||||||||||||||||||||||||||||</label>
+            <label class="newL">Hierarchical</label>
+            <div>
+            <label class="newL">Цвет</label><input type="checkbox" id = "HColor" checked>
+            </div>
+            <div>
+            <label class="newL">Линии</label><input type="checkbox" id = "HLines" checked>
+            </div>
+            <label class="newL">|||||||||||||||||||||||||||||||||</label>
+            <label class="newL">Tree</label>
+            <div>
+            <label class="newL">Цвет</label><input type="checkbox" id = "TColor" checked>
+            </div>
+            <div>
+            <label class="newL">Линии</label><input type="checkbox" id = "TLines" checked>
+            </div>
+        </div>
+        <div class = "blockTakeValues">
+            <label>Количество кластеров</label><input type="number" id="numOfC" min="1" max="5">
+            <label>Количество случайных точек</label><input type="number" id="numOfP" min="1" max="2000">
+        </div>
+        <div>
+            <button onclick = "clstrTree()">Клстр</button><button onclick = "clickClearMtrx()">Очистить поле</button><button onclick = "rndm()">Расставить рандомных точек</button><button onclick = "megaClstr()">Кластеризовать ПО-СУПЕРСКИ</button>
+        </div>
+        <p style="display:none;"> Данная точка относится к кластеру: <span id="demo"></span></p>
+        <div id = "colorForPoint" class="clr" style="display:none;"></div>
+        <script src = scripts\clstr.js></script>
+    </body>
+</html>

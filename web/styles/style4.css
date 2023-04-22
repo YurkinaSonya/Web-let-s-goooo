@@ -1,0 +1,37 @@
+p {
+    color: blueviolet;
+}
+
+.plt {
+    border: solid black;
+    position : absolute;
+    left : 1050px;
+    top : 200px;
+}
+
+.btnBird {
+    position : absolute;
+    left : 400px;
+    top : 300px;
+    width: 200px;
+    height: 400px;
+}
+
+.btnQueen {
+    position : absolute;
+    left : 1600px;
+    top : 800px;
+    width: 300px;
+    height: 150px;
+}
+
+body {
+    background-image: url("1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

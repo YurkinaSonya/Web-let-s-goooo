@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>муравьи</title>
+        <link rel="stylesheet" href="styles\style4.css">
+    </head>
+    
+    <body>
+        <p>><a href = base.html>вернуться на базу</a></p>
+        <canvas id = "plt" class="plt" width = 600px height = 600px></canvas>
+        <button onclick = "clclt()">Рассчитать</button><button onclick = "deletePoint()">Удалить последнего муравья</button>
+        <div class = "btnBird" id = "btnBird" onclick="deletePoint()"></div>
+        <div style="display:none;">
+            <img id="source" src="imges\nt.png" width="32" height="32" />
+        </div>
+        <div class ="btnQueen" onclick="clclt()"></div>
+        <script src = scripts\bugs.js></script>
+    </body>
+</html>
